@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyzz.quizController">
+   <children>
+      <AnchorPane prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: black;">
+      </AnchorPane>
+      <Button fx:id="next" layoutX="64.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleNextAction" text="Next" />
+      <Button fx:id="submit" layoutX="137.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Submit" textFill="#363232" />
+      <RadioButton fx:id="rb1" layoutX="51.0" layoutY="219.0" mnemonicParsing="false" text="RadioButton1">
+         <toggleGroup>
+            <ToggleGroup fx:id="n" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rb3" layoutX="51.0" layoutY="276.0" mnemonicParsing="false" text="RadioButton3" toggleGroup="$n" />
+      <RadioButton fx:id="rb2" layoutX="355.0" layoutY="219.0" mnemonicParsing="false" text="RadioButton2" toggleGroup="$n" />
+      <RadioButton fx:id="rb4" layoutX="355.0" layoutY="276.0" mnemonicParsing="false" text="RadioButton4" toggleGroup="$n" />
+      <TextField fx:id="qno" disable="true" layoutX="14.0" layoutY="79.0" prefHeight="25.0" prefWidth="41.0" promptText="q.no." />
+      <Label fx:id="lab" alignment="TOP_LEFT" layoutX="76.0" layoutY="73.0" prefHeight="109.0" prefWidth="511.0" text="Question" wrapText="true" >
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

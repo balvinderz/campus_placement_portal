@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyzz.HiringPanelController">
+   <children>
+      <Pane layoutY="6.0" prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #47476b;">
+         <children>
+            <Text fill="#bda3a3" layoutX="210.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hiring Information">
+            </Text>
+         </children>
+      </Pane>
+      <Label fx:id="CandName" layoutX="224.0" layoutY="275.0" text="Name of the candidate">
+      </Label>
+      <Button fx:id="butPrev" layoutX="26.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Previous" />
+      <Button fx:id="butList" layoutX="521.0" layoutY="94.0" mnemonicParsing="false" onAction="#listOfStudent" prefHeight="26.0" prefWidth="61.0" text="List All" />
+      <Button fx:id="butNext" layoutX="521.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="61.0" text="Next" />
+      <Button fx:id="butAccept" layoutX="400.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Accept" />
+      <Button fx:id="butReject" layoutX="147.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="53.0" text="Reject" />
+      <Line endX="125.0" endY="-0.20001220703125" layoutX="275.0" layoutY="329.0" opacity="0.32" startX="-74.4000244140625" startY="0.20001220703125" />
+      <Label layoutX="473.0" layoutY="277.0" text="Score : " />
+      <Label layoutX="521.0" layoutY="277.0" />
+      <ListView fx:id="l1" layoutX="200.0" layoutY="69.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+   </children>
+</AnchorPane>
